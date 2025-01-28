@@ -20,7 +20,6 @@ def minimize_costs(cable):
         value = min_1 + min_2
         total_costs += value
         heapq.heappush(cable, value)
-    
     return total_costs
 
 cables_length = [4, 13, 5, 6, 9, 1]
