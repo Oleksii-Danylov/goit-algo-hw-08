@@ -17,10 +17,8 @@ def minimize_costs(cable):
     while len(cable) > 1:     
         min_1 = heapq.heappop(cable)
         min_2 = heapq.heappop(cable)
-        
         value = min_1 + min_2
         total_costs += value
-        
         heapq.heappush(cable, value)
     
     return total_costs
